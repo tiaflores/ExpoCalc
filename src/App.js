@@ -61,11 +61,11 @@ export default class App extends React.Component {
 
     render() {
         return (
-                <div className="appdiv">
-                    <div className="resultdiv"><Result result={this.state.result}/></div>
+              <  view className="appdiv">
+                  <  view className="resultdiv"><Result result={this.state.result}/></view>
                     <Buttons onClick={this.onClick}/>
-                    <div className="historyDiv"><History history={this.hist()}/></div>
-                </div>
+                  <  view className="historyDiv"><History history={this.hist()}/></view>
+                </view>
         );
     }
 }

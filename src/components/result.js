@@ -8,9 +8,9 @@ export default class Result extends React.Component{
     render() {
             let {result} = this.props;
             return (
-                <div className="results">
+                <view className="results">
                     <p>{result}</p>
-                </div>
+                </view>
         );
       }
 }
