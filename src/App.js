@@ -30,7 +30,7 @@ export default class App extends React.Component {
       try {
           let res = this.state.result
           let histArray = this.state.histArr
-          let history = res + " = " + eval(res)
+          let history = res + " = " + eval(res) + "\n"
 
           this.setState({result: eval(res)})
           histArray.push(history)
@@ -61,7 +61,7 @@ export default class App extends React.Component {
       <View style={styles.container}>
         <StatusBar barStyle="light-content" />
         <SafeAreaView>
-          <Text style={styles.history}>{this.state.histArr + '\n\n'}</Text>
+          <Text style={styles.history}>{this.state.histArr}</Text>
           <Text style={styles.value}>
             {(this.state.result).toLocaleString()}
           </Text>
@@ -118,5 +118,6 @@ const styles = StyleSheet.create({
    textAlign: "right",
    color: "#969696",
    marginRight: 20,
+   marginLeft: 250
   }
 });
